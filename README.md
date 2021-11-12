@@ -27,8 +27,13 @@ Like chia, some forks ask for a password. A script was created to add it at boot
 
 
 
+####################################################
+####################################################
 
-Steps with passwords:
+
+
+
+Steps with password:
 
 1. Install the expect packages:
 
@@ -55,7 +60,8 @@ Steps without passwords:
 
 
 
-#######
+########################################################################
+########################################################################
 
 
 Next steps:
