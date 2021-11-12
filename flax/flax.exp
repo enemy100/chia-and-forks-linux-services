@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+
+#set timeout -1
+spawn /home/gpu/mineracao/scripts_init/flax/flax-server-start.sh
+
+
+#set timeout 10
+expect "(Unlock Keyring) Passphrase:\r"
+send -- "p27bxtxmytenemy100\r"
+
+expect eof
+
+
+exit 0

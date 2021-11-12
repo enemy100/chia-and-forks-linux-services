@@ -1,0 +1,29 @@
+[Unit]
+
+Description=CHIA Service
+
+After=syslog.target network.target
+
+[Service]
+
+User=gpu
+
+Group=gpu
+
+WorkingDirectory= /usr/lib/flax-blockchain/resources/app.asar.unpacked/daemon/
+
+Type=forking
+
+
+
+#ExecStartPre= /home/gpu/mineracao/scripts_init/flax/flax.exp
+
+ExecStart= /home/gpu/mineracao/scripts_init/flax/flax.exp
+
+#ExecStop= /home/gpu/mineracao/scripts_init/flax/flax-server-stop.sh
+
+#ExecStop= /usr/lib/flax-blockchain/resources/app.asar.unpacked/daemon/flax stop farmer
+
+[Install]
+
+WantedBy=multi-user.target

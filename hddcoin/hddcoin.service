@@ -1,0 +1,29 @@
+[Unit]
+
+Description=CHIA Service
+
+After=syslog.target network.target
+
+[Service]
+
+User=gpu
+
+Group=gpu
+
+WorkingDirectory= /usr/lib/hddcoin-blockchain/resources/app.asar.unpacked/daemon/
+
+Type=forking
+
+
+
+#ExecStartPre= /home/gpu/mineracao/scripts_init/hddcoin/hddcoin.exp
+
+ExecStart= /home/gpu/mineracao/scripts_init/hddcoin/hddcoin.exp
+
+#ExecStop= /home/gpu/mineracao/scripts_init/chia/chia-server-stop.sh
+
+#ExecStop= /usr/lib/chia-blockchain/resources/app.asar.unpacked/daemon/chia stop farmer
+
+[Install]
+
+WantedBy=multi-user.target
