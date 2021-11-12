@@ -1,0 +1,14 @@
+#!/usr/bin/expect -f
+
+#set timeout -1
+spawn /home/gpu/mineracao/scripts_init/chia/chia-server-start.sh
+
+
+#set timeout 10
+expect "(Unlock Keyring) Passphrase:\r"
+send -- "PASSWORD\r"
+
+expect eof
+
+
+exit 0
