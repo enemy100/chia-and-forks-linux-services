@@ -7,13 +7,20 @@
 
 obs:
 
-Default dir:
+Default dir (chia example):
 
 /usr/lib/chia-blockchain/resources/app.asar.unpacked/daemon
 
 Default user and group:
 
 gpu/gpu
+
+
+change "PASSWORD" for you password on .exp files
+
+script default dir:
+/home/gpu/mineracao/scripts_init/
+
 
 
 Like chia, some forks ask for a password. A script was created to add it at boot time.
