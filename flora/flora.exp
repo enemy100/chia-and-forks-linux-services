@@ -6,7 +6,7 @@ spawn /home/gpu/mineracao/scripts_init/flora/flora-server-start.sh
 
 #set timeout 10
 expect "(Unlock Keyring) Passphrase:\r"
-send -- "p27bxtxmytenemy100\r"
+send -- "PASSWORD\r"
 
 expect eof
 
