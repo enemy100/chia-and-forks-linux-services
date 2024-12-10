@@ -70,9 +70,9 @@ Next steps:
 Add systemctl services for each fork
 
 
-Proximos Passos:
+Next steps:
 
-Criar servicos no systemd para cada fork
+Create a systemd services for each fork
 
 
 
